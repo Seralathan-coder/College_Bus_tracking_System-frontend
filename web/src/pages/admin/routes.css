@@ -1,0 +1,48 @@
+.admin-routes { display: grid; gap: 1.25rem; color: #17334c; }
+.admin-routes__hero { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: clamp(1.2rem, 3vw, 2rem); color: #fff; background: radial-gradient(circle at 90% 0%, #398e83 0, transparent 35%), linear-gradient(125deg, #102b49, #174c63); border-radius: 20px; box-shadow: 0 12px 30px #102b491c; }
+.admin-routes__hero h2 { margin: 0.35rem 0; font-size: clamp(1.45rem, 3vw, 2rem); letter-spacing: -0.03em; }
+.admin-routes__hero p { margin: 0; color: #d7e5eb; }
+.admin-routes__eyebrow { color: #338375; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; }
+.admin-routes__hero .admin-routes__eyebrow { color: #b7e3d7; }
+.admin-routes__stat { display: grid; min-width: 78px; min-height: 78px; place-content: center; text-align: center; background: #ffffff18; border: 1px solid #ffffff30; border-radius: 18px; }
+.admin-routes__stat strong { font-size: 1.7rem; line-height: 1; }
+.admin-routes__stat span { margin-top: 0.25rem; color: #d7e5eb; font-size: 0.75rem; }
+.admin-routes__section { display: grid; gap: 0.8rem; padding: clamp(1rem, 2vw, 1.4rem); background: #fff; border: 1px solid #dce7e9; border-radius: 17px; box-shadow: 0 6px 20px #102b4908; }
+.admin-routes__section-heading, .admin-routes__route-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.admin-routes__section-heading h3, .admin-routes__route-heading h3 { margin: 0.2rem 0 0; }
+.admin-routes__count { padding: 0.4rem 0.7rem; color: #176d61; background: #e8f5f1; border-radius: 99px; font-size: 0.8rem; font-weight: 700; }
+.admin-routes__suggestions { display: grid; gap: 0.65rem; }
+.admin-routes__suggestion { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.8rem; padding: 0.9rem; background: #f8fbfa; border: 1px solid #e3ecea; border-radius: 13px; }
+.admin-routes__suggestion-pin { display: grid; width: 40px; height: 40px; place-items: center; color: #18786a; background: #e4f3ed; border-radius: 12px; font-size: 1.3rem; font-weight: 700; }
+.admin-routes__suggestion-info h4 { margin: 0; }
+.admin-routes__suggestion-info p { margin: 0.15rem 0; color: #476074; font-size: 0.88rem; }
+.admin-routes__suggestion-info small { color: #728596; }
+.admin-routes__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem; }
+.admin-routes__route { padding: 1rem; background: linear-gradient(150deg, #fff, #fbfdfd); border: 1px solid #e1e9eb; border-radius: 15px; }
+.admin-routes__route + .admin-routes__route { margin-top: 0.1rem; }
+.admin-routes__route-heading p { margin: 0.3rem 0 0; color: #62798a; }
+.admin-routes__stop-list { display: grid; gap: 0.45rem; margin: 1rem 0; padding: 0; list-style: none; }
+.admin-routes__stop-list li { display: grid; grid-template-columns: 2.4rem minmax(8rem, 1fr) auto; align-items: center; gap: 0.6rem; padding: 0.65rem 0.8rem; background: #f5f8f9; border: 1px solid #e5edef; border-radius: 10px; }
+.admin-routes__stop-list li b { color: #148273; font-size: 0.82rem; }
+.admin-routes__stop-list li small { color: #748798; font-variant-numeric: tabular-nums; }
+.admin-routes__edit-button { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.65rem 0.85rem; color: #126c60; background: #e9f5f1; border: 1px solid #d5eae3; border-radius: 10px; font-weight: 700; }
+.admin-routes__edit-button:hover { background: #dff0ea; }
+.admin-routes__editor { margin-top: 0.85rem; }
+.admin-routes__hint { display: grid; gap: 0.15rem; color: #516879; font-size: 0.9rem; }
+.admin-routes__hint strong { color: #173b55; }
+.admin-routes__editor .map-wrap { margin: 0.7rem 0; }
+.admin-routes__editor .admin-routes__actions { margin-top: 0.8rem; }
+.admin-routes__snap-warning { margin: 0.65rem 0; padding: 0.85rem 1rem; color: #785017; background: #fff8e8; border: 1px solid #f2dfb4; border-radius: 11px; }
+.admin-routes__snap-warning > strong { color: #70450b; }
+.admin-routes__snap-warning ul { display: grid; gap: 0.25rem; margin: 0.5rem 0; padding: 0; list-style: none; }
+.admin-routes__snap-warning li { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.88rem; }
+.admin-routes__snap-warning small { color: #8b7047; }
+@media (max-width: 700px) {
+  .admin-routes__hero { align-items: flex-start; }
+  .admin-routes__suggestion { grid-template-columns: auto 1fr; }
+  .admin-routes__suggestion-info small { display: block; }
+  .admin-routes__suggestion .admin-routes__actions { grid-column: 1 / -1; justify-content: stretch; }
+  .admin-routes__suggestion .admin-routes__actions button { flex: 1; }
+  .admin-routes__stop-list li { grid-template-columns: 2rem minmax(0, 1fr); }
+  .admin-routes__stop-list li small { grid-column: 2; }
+}

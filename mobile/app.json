@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "College Bus Tracking",
+    "slug": "college-bus-tracking",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "collegebustracking",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow College Bus Tracking to use your location while a trip is active."
+        }
+      ]
+    ],
+    "android": {
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Location is used to send the bus GPS during an active trip."
+      }
+    }
+  }
+}
